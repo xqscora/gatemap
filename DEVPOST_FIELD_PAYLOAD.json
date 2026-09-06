@@ -1,0 +1,15 @@
+{
+  "project_name": "GateMap",
+  "elevator_pitch": "Turn a competition brief and current project evidence into an inspectable AI gate map.",
+  "built_with": [
+    "Python standard-library HTTP server",
+    "Ollama qwen2.5:1.5b",
+    "HTML5",
+    "CSS3",
+    "vanilla JavaScript",
+    "Browser Blob export",
+    "strict JSON response validation"
+  ],
+  "project_story": "## What inspired us\n\nProject work often fails at the handoff between a brief and the evidence that proves a requirement is met. A polished checklist can hide which claims are actually supported.\n\n## What it does\n\nGateMap turns a competition brief and current project evidence into an inspectable gate map. It extracts structured requirements, labels evidence and gaps, and drafts the smallest next action. The user can inspect the returned schema before accepting the map.\n\n## How we built it\n\nThe prototype uses a Python standard-library HTTP server and a local Ollama qwen2.5:1.5b model. The browser interface renders the validated JSON response and supports a local receipt export. No brief or project evidence is sent to a hosted service.\n\n## What we learned\n\nA useful AI workflow is easier to trust when the model is constrained to a schema and the evidence boundary remains visible. GateMap treats a language model as a structured drafting component, not as the authority that decides whether a project is complete.\n\n## AI-use disclosure\n\nThe runtime AI is a local Ollama model. AI coding assistance was also used for implementation drafting and debugging. The project owner reviewed the implementation and remains responsible for understanding and explaining the code.",
+  "safety_note": "GateMap is a project-evidence planning aid. It does not certify compliance, make legal claims, or replace a competition's official rules or judge review."
+}

@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GateMap | Evidence before confidence</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="shell">
+    <header class="topbar"><div class="brand"><span class="mark">G</span><span>GateMap</span></div><span class="local-pill">Ollama local · no upload</span></header>
+    <section class="hero">
+      <div><p class="eyebrow">GATEWAYGS HACKATHON 2</p><h1>Turn a big brief into proof you can actually ship.</h1><p class="lede">GateMap uses a local language model to separate must-show evidence from assumptions, then gives a builder one bounded next step.</p></div>
+      <div class="flow"><span>brief</span><b>→</b><span>evidence</span><b>→</b><span>gates</span></div>
+    </section>
+    <section class="workspace">
+      <div class="input-panel panel">
+        <div class="panel-head"><div><p class="eyebrow">01 · INPUT</p><h2>Give the model two things</h2></div><button id="load-example" class="ghost" type="button">Load example</button></div>
+        <label for="brief">Competition brief</label>
+        <textarea id="brief" rows="7" placeholder="What problem does the competition ask you to solve?"></textarea>
+        <label for="evidence">Project evidence</label>
+        <textarea id="evidence" rows="7" placeholder="What is actually built, tested, linked, or still unknown?"></textarea>
+        <div class="actions"><span id="status" role="status">Nothing has left this computer.</span><button id="run" class="primary" type="button">Run GateMap</button></div>
+      </div>
+      <section id="output" class="output-panel panel" aria-live="polite" hidden>
+        <div class="panel-head"><div><p class="eyebrow">02 · GATE MAP</p><h2>Evidence before confidence</h2></div><span id="model-label" class="model-label">local model</span></div>
+        <div class="problem" id="problem"></div>
+        <div class="result-grid"><article><h3>Must show</h3><ul id="must-show"></ul></article><article><h3>Still unknown</h3><ul id="unknowns"></ul></article></div>
+        <div class="next"><p class="eyebrow">03 · ONE NEXT STEP</p><strong id="next-step"></strong><p id="risk"></p></div>
+        <div class="actions"><span id="receipt-status">Local result only.</span><button id="export" class="primary" type="button">Export local brief</button></div>
+      </section>
+    </section>
+    <footer><span>GateMap / GatewayGS Hackathon 2</span><span>AI runs through Ollama on this computer · not uploaded</span></footer>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
