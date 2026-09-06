@@ -4,6 +4,9 @@ GateMap is a local AI evidence planner for GatewayGS Hackathon 2. A builder give
 
 It is not a submission bot. It does not log in, upload, send messages, or claim that a missing public link exists. The browser exports a local JSON brief marked `externalData: false` and `notUploaded: true`.
 
+Public build: https://github.com/xqscora/gatemap  
+Live browser shell: https://xqscora.github.io/gatemap/
+
 ## Run locally
 
 1. Ensure Ollama is running with `qwen2.5:1.5b` available.
