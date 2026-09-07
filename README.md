@@ -13,6 +13,12 @@ Live browser shell: https://xqscora.github.io/gatemap/
 2. Run `python server.py`.
 3. Open `http://127.0.0.1:8795/`.
 
+The public GitHub Pages shell cannot reach a visitor's `127.0.0.1` Ollama
+service. When that local endpoint is unavailable, the browser shows an
+explicitly labelled deterministic offline fallback instead of an HTML error or
+an invented model result. The fallback is only a demo aid; model-backed output
+still requires the local server and Ollama.
+
 The model call stays on `127.0.0.1:11434`; no hosted API key is used.
 
 ## Why this is distinct

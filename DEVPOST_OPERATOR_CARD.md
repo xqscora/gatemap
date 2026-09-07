@@ -12,7 +12,7 @@ Local preparation only. GatewayGS requires an AI-core project and accepts a vide
 
 ## Demo path
 
-Load the synthetic brief, run the local model, inspect must-show evidence and unknowns, then export a local brief. The result explicitly says it was not uploaded.
+Load the synthetic brief, run the local model, inspect must-show evidence and unknowns, then export a local brief. On the public shell, if Ollama is unreachable, the page shows an explicitly labelled deterministic offline fallback; do not present that fallback as model output. The result explicitly says it was not uploaded.
 
 ## External boundary
 
